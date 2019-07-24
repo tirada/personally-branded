@@ -10,15 +10,15 @@ export interface ThemeCardProps {
 
 export const ThemeCard = (props: ThemeCardProps) => {
     return (
-        <Card>
+        <Card style={{width: '100%'}}>
             <CardActionArea>
                 <CardMedia
                     image={props.imageURL}
                     title={props.title}
-                    style={{height: '140px'}}
+                    style={{height: '64px'}}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="subtitle1">
+                    <Typography variant="subtitle1">
                         {props.themeName}
                     </Typography>
                 </CardContent>
